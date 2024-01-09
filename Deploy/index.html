@@ -188,7 +188,7 @@ header {
       }
       currentIndex = Math.min(currentIndex + batchSize + 1, 10000); // Update currentIndex
       // Hide the "Load More" button if all images have been loaded
-      if (currentIndex > 9999) {
+      if (currentIndex > 4242) {
         loadMoreButton.style.display = 'none';
 	// randomButton.style.display = 'none';
       }
@@ -246,7 +246,7 @@ header {
         console.log('Connection error:', error);
       });
     const randomizeStartingIndex = () => {
-      currentIndex = Math.floor(Math.random() * (10000 - batchSize)); // Generate a random index within the range
+      currentIndex = Math.floor(Math.random() * (4241 - batchSize)); // Generate a random index within the range
        // Clear existing images
       loadImageBatch(); // Load images with the new starting index
     };
